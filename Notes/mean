@@ -1,0 +1,45 @@
+MEAN - MongoDB, Express, Angular, Node
+
+MongoDB:
+	-NoSQL Document Database
+	-Dynamic Structure
+	-Binary JSON (format it's saved in)
+	-Full index support (query optimization)
+	-Map/Reduce  & Aggregation
+	-Scale & Availability
+
+	Mongod - run server
+	mongo - client
+	 user db-name
+	 show collections
+	 db.db-name.insters({json data})
+	 db.db-name.find()
+
+Node.js
+-JS on the server
+-Google's v8 engine
+-Non-blocking asyn model - runs with a single thread
+-NPM (Node Package Manager) - installed with Node 
+-when installing modules use npm install name --save to add dependencies to package.json file
+
+Express.js
+(node module)
+ 	-web app framework for Node
+ 	-http server 
+ 	-routes
+ 	-middleware - inject
+
+Angular.js
+	-client-side MVC framework
+	-Build dynamic web apps
+	-seperate concerns
+	-declarative UI bindings
+	-Embeddable (use a little or as much)
+	-testable - dependency injections, more maintable
+
+Each projecy contaings a package.json file which holds the project details, *name, *version (bare minimum)
+main file 
+	- entry point for node server 
+	- main.js or server.js 
+	- start server: run this file by the command - node filename  node server
+	- in code include express

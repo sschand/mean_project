@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="commentsApp">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<p>Hellooo from the local server </p>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script> 
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-resource.js"></script> 
+	<script type="text/javascript" src="/js/controllers/comments-controller.js"></script>
+</head>
+<body>
+	<!-- View -->
+	<div ng-controller="commentsController">
+		<h1>There are {{comments.length}} comments</h1>
+
+		<ul>
+			<li ng-repeat="comment in comments"> {{comment.name}}</li>
+		</ul>
+		<form ng-submit="addComment()">
+			<input type="text" placeholder="Add comment here" ng-model="commentName" name="" value=""></input>
+			<button type="submit">Add</button>
+		</form>
+	</div>
+	
+</body>
+</html>
